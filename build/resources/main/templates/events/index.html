@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+<div class="container-lg mt-4 text-md-start">
+    <div class="row justify-content-center align-items-center">
+        <h3 class="text-center display-6 mt-3 mb-4 text-muted"> Here is your connections list. Your network is growing! </h3>
+    </div>
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+<!--            <th>ID</th>-->
+            <th>Name</th>
+            <th>Company</th>
+            <th>Job Title</th>
+<!--            <th>LinkedIn</th>-->
+            <th>Contact Email</th>
+<!--            <th>Description</th>-->
+            <th>Edit Contact</th>
+        </tr>
+    </thead>
+    <tr th:each="event : ${events}">
+<!--        <td th:text="${event.id}"></td>-->
+        <td>
+            <a th:href="@{/events/{id}(id=${event.id})}" th:text="${event.name}" class="text-decoration-none
+g">
+            </a>
+        </td>
+        <td th:text="${event.company}"></td>
+        <td th:text="${event.title}"></td>
+<!--        <td th:text="${event.linkedin}"></td>-->
+        <td th:text="${event.contactEmail}"></td>
+      <td>  <a class="text-decoration-none" th:href="@{/events/{id}/edit(id=${event.id})}">Edit</a></td>
+<!--        <td th:text="${event.description}"></td>-->
+<!--        <td th:text="${event.type.displayName}"></td>-->
+    </tr>
+</table>
+</div>
+
+</body>
+</html>
