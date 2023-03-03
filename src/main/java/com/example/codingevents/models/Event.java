@@ -48,6 +48,17 @@ public class Event {
         this.imageLink = imageLink;
     }
 
+    public Event(String name) {
+        this.name = name;
+        this.company = "No company listed.";
+        this.title = "Friend";
+        this.linkedin = "No LinkedIn account connected.";
+        this.description = "N/A";
+        this.contactEmail = "blank@blank.com";
+        this.type = EventType.SOCIAL;
+        this.imageLink = "N/A";
+    }
+
     public Event() {
     }
 
