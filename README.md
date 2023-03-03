@@ -42,13 +42,11 @@
 
 1. Fork this repo or clone it to your local machine
 
-2. Make sure you have Java and JDK 19 installed on your local machine. Here is the link to dowload the latest version of JDK: 
+2. Make sure you have Java and JDK 17 installed on your local machine. Here is the link to dowload the latest version of JDK: 
 
 https://www.oracle.com/java/technologies/downloads/
 
-3. Change your SDK to JDK 19 in the project's structure:
-
-![project structure](https://res.cloudinary.com/dfyitssyo/image/upload/v1677612546/Strategio/projectstructur-sdk19_1_kjo6bb.png)
+3. Change your SDK to JDK 17 in the project's structure:
 
 4. To set up MySQL database on your local machine check out the instructions here:
 
