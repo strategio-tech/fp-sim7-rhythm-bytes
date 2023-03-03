@@ -135,6 +135,8 @@ public class EventRepositoryTest {
         repo.delete(event_luke);
         // Assert that repo count equals 4
         assertEquals(repo.count(), 4);
+
+        repo.deleteAll();
     }
 
     @Test
